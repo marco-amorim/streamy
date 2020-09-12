@@ -23,11 +23,11 @@ class GoogleAuth extends Component {
 		this.setState({ isSignedIn: this.auth.isSignedIn.get() });
 	};
 
-	onSignIn = () => {
+	onSignInClick = () => {
 		this.auth.signIn();
 	};
 
-	onSignOut = () => {
+	onSignOutClick = () => {
 		this.auth.signOut();
 	};
 
