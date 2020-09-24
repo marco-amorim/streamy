@@ -1,18 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { signIn, signOut } from '../actions';
 
-class GoogleAuth extends Component {
+class GoogleAuth extends React.Component {
 	componentDidMount() {
 		window.gapi.load('client:auth2', () => {
 			window.gapi.client
 				.init({
 					clientId:
-						'910495003929-sttcuq7hg45sjg5o7c3hfu559fh4a7pp.apps.googleusercontent.com',
+						'797401886567-9cumct9mrt3v2va409rasa7fa6fq02hh.apps.googleusercontent.com',
 					scope: 'email',
 				})
 				.then(() => {
 					this.auth = window.gapi.auth2.getAuthInstance();
+
 					this.onAuthChange(this.auth.isSignedIn.get());
 					this.auth.isSignedIn.listen(this.onAuthChange);
 				});
@@ -47,7 +48,7 @@ class GoogleAuth extends Component {
 			);
 		} else {
 			return (
-				<button onClick={this.onSignInClick} className="ui green google button">
+				<button onClick={this.onSignInClick} className="ui red google button">
 					<i className="google icon" />
 					Sign In with Google
 				</button>
