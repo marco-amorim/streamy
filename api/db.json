@@ -1,3 +1,34 @@
 {
-  "streams": []
+  "streams": [
+    {
+      "title": "My stream",
+      "description": "This is my stream",
+      "userId": "109911507839924481177",
+      "id": 1
+    },
+    {
+      "title": "This is stream number 2",
+      "description": "This is stream number 2",
+      "userId": "109911507839924481177",
+      "id": 2
+    },
+    {
+      "title": "This is stream number 3",
+      "description": "This is stream number 3",
+      "userId": "109911507839924481177",
+      "id": 3
+    },
+    {
+      "title": "This is stream number 4",
+      "description": "This is stream number 4",
+      "userId": "109911507839924481177",
+      "id": 4
+    },
+    {
+      "title": "This is stream number 5",
+      "description": "This is stream number 5",
+      "userId": "109911507839924481177",
+      "id": 5
+    }
+  ]
 }
